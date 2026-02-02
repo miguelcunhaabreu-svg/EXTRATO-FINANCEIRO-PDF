@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input, button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#resultado {
+  margin-top: 30px;
+}
+
+#resultado h2 {
+  color: #444;
+}
+
+#resultado div {
+  margin: 15px 0;
+  padding: 10px;
+  border-left: 4px solid #4CAF50;
+  background: #f9f9f9;
+}
+
+#resultado p {
+  margin: 6px 0;
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Modal preview */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+}
+.modal-actions {
+  text-align: right;
+  margin-top: 12px;
+}
+.modal-actions button {
+  margin-left: 8px;
+}

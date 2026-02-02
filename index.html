@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Extrato Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Leitor de Extrato Financeiro</h1>
+    
+    <input type="file" id="file-input" accept="application/pdf">
+    <button id="process-btn" disabled style="display:none">Processar PDF</button>
+    <button id="preview-btn">Pré-visualizar</button>
+    
+    <div id="resultado">
+      <h2>Transações Organizadas</h2>
+      <div id="pix"></div>
+      <div id="cartao"></div>
+      <div id="boleto"></div>
+      <div id="outros"></div>
+    </div>
+  </div>
+
+  <!-- Biblioteca pdf.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Modal de pré-visualização -->
+  <div id="preview-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h3>Pré-visualização</h3>
+      <div id="preview-body"></div>
+      <div class="modal-actions">
+        <button id="confirm-btn">Confirmar</button>
+        <button id="cancel-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
